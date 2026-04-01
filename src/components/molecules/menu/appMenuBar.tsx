@@ -1,5 +1,4 @@
 import AppMenu from './appMenu.tsx';
-import { useState } from 'react';
 import { LayoutGroup } from 'framer-motion';
 import HomeIcon from '../../../assets/menu/home.svg';
 import HomeFocusIcon from '../../../assets/menu/home_focus.svg';
@@ -7,9 +6,13 @@ import ProfileIcon from '../../../assets/menu/profile.svg';
 import ProfileFocusIcon from '../../../assets/menu/profile_focus.svg';
 import { twMerge } from 'tailwind-merge';
 
-const AppMenuBar = () => {
-  const [index, setIndex] = useState(0);
-
+const AppMenuBar = ({
+  index,
+  setIndex,
+}: {
+  index: number;
+  setIndex: (idx: number) => void;
+}) => {
   return (
     <div
       className={twMerge(

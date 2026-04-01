@@ -3,7 +3,7 @@ import AgreementTab from '../organisms/joinMember/tabs/agreementTab.tsx';
 import InterestFairsTab from '../organisms/joinMember/tabs/interestFairsTab.tsx';
 import JoinResultTab from '../organisms/joinMember/tabs/joinResultTab.tsx';
 import PrimaryButton from '../atoms/buttons/primaryButton.tsx';
-import TabHeader from '../organisms/common/tabHeader.tsx';
+import PageHeader from '../organisms/common/pageHeader.tsx';
 import { useNavigate } from 'react-router';
 import { useJoinMemberStore } from '../../state/joinMemberState.ts';
 
@@ -37,7 +37,7 @@ const JoinMemberTemplate = () => {
   return (
     <div className={'flex h-screen w-full flex-col'}>
       {activeTabIndex !== 0 && activeTabIndex !== tabItems.length - 1 && (
-        <TabHeader onBack={prev} />
+        <PageHeader onBack={prev} />
       )}
       <div className={'flex h-full flex-col px-4'}>
         <div className={'flex-1 pb-6'}>{currentTab.content}</div>

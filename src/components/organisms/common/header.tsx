@@ -10,8 +10,16 @@ const Header = () => {
       }
     >
       <div className={'flex gap-x-2'}>
-        <img src={'/logo.svg'} alt={'logo'} width={26} />
-        <img src={'/title.svg'} alt={'title'} width={97} />
+        <img
+          src={`${import.meta.env.BASE_URL}logo.svg`}
+          alt={'logo'}
+          width={26}
+        />
+        <img
+          src={`${import.meta.env.BASE_URL}title.svg`}
+          alt={'title'}
+          width={97}
+        />
       </div>
       <div>
         <PrimaryButton

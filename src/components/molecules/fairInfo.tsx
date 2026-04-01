@@ -3,7 +3,14 @@ import TextSplit from '../atoms/textSplit.tsx';
 
 const FairInfo = () => {
   return (
-    <div className={'flex flex-col border-b border-b-gray-200 p-4'}>
+    <div className={'border-border-strong flex flex-col border-b p-4'}>
+      <Text
+        weight={'emphasize'}
+        type={'footnote'}
+        className={'text-text-primary'}
+      >
+        베이비 육아
+      </Text>
       <Text weight={'emphasize'} type={'body1'}>
         2026 유학박람회
       </Text>

@@ -2,7 +2,6 @@ import type { ReactNode } from 'react';
 
 interface HomeTemplateProps {
   earlyBird: ReactNode;
-  gather: ReactNode;
   location1: ReactNode;
   location2: ReactNode;
 }
@@ -15,7 +14,6 @@ const HomeTemplate = (props: HomeTemplateProps) => {
       }
     >
       {props.earlyBird}
-      {props.gather}
       {props.location1}
       {props.location2}
       <div className={'mt-35'} />
